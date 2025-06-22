@@ -1,10 +1,5 @@
-local token = getgenv().DISCORD_TOKEN
-local channel_id = getgenv().TARGET_CHANNEL_ID
-
-if not token or not webhook then
-    error("❌ Token veya Webhook URL tanımlı değil. Lütfen script başında tanımla.")
-end
-
+local DISCORD_TOKEN = getgenv().token
+local TARGET_CHANNEL_ID = getgenv().channel_id
 
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
